@@ -20,14 +20,17 @@ public class Pinguim extends Ave{
 
     @Override
     public void mover() {
-        super.mover(); //To change body of generated methods, choose Tools | Templates.
-        System.out.println("Movendo-se por terra com " + getPatas() + " ou as vezes nadando!");
+         System.out.println("Movendo-se por terra com " + getPatas() + " ou as vezes nadando!");
     }
 
     @Override
     public void comer() {
-        super.comer(); //To change body of generated methods, choose Tools | Templates.
         System.out.println("Comendo peixes ou nutrientes marinhos!");
+    }
+
+    @Override
+    public void brigar() {
+        System.out.println("Brigando dando bicadas!");//To change body of generated methods, choose Tools | Templates.
     }
     
     

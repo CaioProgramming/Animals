@@ -9,7 +9,7 @@ package animalsproject;
  *
  * @author cacai
  */
-public class Mamifero extends Animal {
+public abstract class Mamifero extends Animal {
     
     
     
@@ -24,14 +24,19 @@ public class Mamifero extends Animal {
 
     @Override
     public void comer() {
-        super.comer(); //To change body of generated methods, choose Tools | Templates.
-        System.out.println("Alimentando-se através da amamentação!");
+         System.out.println("Alimentando-se através da amamentação!");
     }
 
      @Override
     public void mover() {
-        super.mover(); //To change body of generated methods, choose Tools | Templates.
-        System.out.println("Movendo-se com as 4 patas!");
+         System.out.println("Movendo-se com as 4 patas!");
     }
+
+    @Override
+    public void brigar() {
+        throw new UnsupportedOperationException("Brigando utilizando mordidas"); 
+    }
+    
+    
    
 }

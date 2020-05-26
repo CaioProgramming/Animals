@@ -17,15 +17,20 @@ public abstract class Reptil extends Animal {
 
     @Override
     public void comer() {
-        super.comer(); //To change body of generated methods, choose Tools | Templates.
-        System.out.println("Alimentando-se de insetos");
+         System.out.println("Alimentando-se de insetos");
     }
 
     @Override
     public void mover() {
-        super.mover(); //To change body of generated methods, choose Tools | Templates.
-        System.out.println("Rastejando-se");
+         System.out.println("Rastejando-se");
     }
+
+    @Override
+    public void brigar() {
+        throw new UnsupportedOperationException("Brigando utilizando cauda");
+    }
+    
+    
     
     
     

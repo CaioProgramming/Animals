@@ -17,14 +17,17 @@ public abstract class Peixe extends Animal {
 
     @Override
     public void mover() {
-        super.mover(); //To change body of generated methods, choose Tools | Templates.
-        System.out.println("Nadando!");
+         System.out.println("Movimentando-se por nado!");
     }
 
     @Override
     public void comer() {
-        super.comer(); //To change body of generated methods, choose Tools | Templates.
-        System.out.println("Comendo nutrientes marinhos!");
+         System.out.println("Comendo nutrientes marinhos!");
+    }
+
+    @Override
+    public void brigar() {
+        throw new UnsupportedOperationException("Brigando utilizando nadadeiras!");
     }
     
    

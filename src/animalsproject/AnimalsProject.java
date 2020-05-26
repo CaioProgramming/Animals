@@ -5,6 +5,7 @@
  */
 package animalsproject;
 
+import animais.Abelha;
 import animais.Iguana;
 import animais.Pinguim;
 import animais.Tubarao_branco;
@@ -24,7 +25,8 @@ public class AnimalsProject {
         Pinguim pinguim = new Pinguim(2, "visão adaptada ao mergulho", 32);
         Iguana iguana = new Iguana(4, "Periférica excelente", 13);
         Tubarao_branco tubaraoBranco = new Tubarao_branco(0, "Míope", 70);
-        showAnimalsData(urso,pinguim,iguana,tubaraoBranco);
+        Abelha abelha = new Abelha(6, "visão de 280 graus", 0.5);
+        showAnimalsData(urso,pinguim,iguana,tubaraoBranco,abelha);
         
         
      }
@@ -32,9 +34,9 @@ public class AnimalsProject {
     
     public static void showAnimalsData(Animal... animals){
         for(Animal a : animals){
-            System.out.println("Animal " + a.getClass().getSimpleName());
-            System.out.println("Patas " + a.getPatas());
-            System.out.println("Idade máxima " + a.getIdade_max());
+            System.out.println("\n" + a.getClass().getSimpleName());
+            System.out.println("Patas -> " + a.getPatas());
+            System.out.println("Idade máxima -> " + a.getIdade_max() + " anos");
             a.mover();
             a.comer();
             a.brigar();

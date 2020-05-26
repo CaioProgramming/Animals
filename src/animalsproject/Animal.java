@@ -11,15 +11,17 @@ package animalsproject;
  */
 public abstract class Animal {
 
-    public Animal(int patas, String visao, int idade_max) {
+    public Animal(int patas, String visao, double idade_max) {
         this.patas = patas;
         this.visao = visao;
         this.idade_max = idade_max;
     }
     
+    
+    
    private int patas;
    private String visao;
-   private  int idade_max;
+   private  double idade_max;
 
     public int getPatas() {
         return patas;
@@ -42,7 +44,7 @@ public abstract class Animal {
         this.visao = visao;
     }
 
-    public int getIdade_max() {
+    public double getIdade_max() {
         return idade_max;
     }
 
@@ -50,17 +52,10 @@ public abstract class Animal {
         this.idade_max = idade_max;
     }
    
-   public void comer(){
-       System.out.println("Comendo...\n");
-   }
+   public abstract void comer();
     
-   public void mover(){
-       System.out.println("Movendo-se...\n");
-   }
-    
-   public void brigar(){
-       System.out.println("Brigando...\n");
-   }
+   public abstract void mover();
+   public abstract void brigar();
     
     
 }

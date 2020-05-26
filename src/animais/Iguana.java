@@ -29,6 +29,11 @@ public class Iguana extends Reptil{
         System.out.println("Movendo-se com "+  getPatas() + " patas e balançando a cauda!");
     }
 
+    @Override
+    public void brigar() {
+        System.out.println("Brigando utilizando cauda!");//To change body of generated methods, choose Tools | Templates.
+    }
+
     
     
     

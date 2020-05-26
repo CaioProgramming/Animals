@@ -19,14 +19,12 @@ public class Urso extends Mamifero{
 
     @Override
     public void comer() {
-        super.comer(); //To change body of generated methods, choose Tools | Templates.
-        System.out.println("Comendo peixes!");
+         System.out.println("Alimenta-se de peixes de água doce ou outros animais!");
     }
 
     //Sobrescrita/polimorfismo de inclusão de ação de briga!
     @Override
     public void brigar() {
-        super.brigar(); //To change body of generated methods, choose Tools | Templates.
         System.out.println("Brigando utilizando garras...");
     }
 

@@ -31,7 +31,6 @@ public class Tubarao_branco extends Peixe{
 
     @Override
     public void brigar() {
-        super.brigar(); //To change body of generated methods, choose Tools | Templates.
         System.out.println("Brigando com mordidas ferozes!");
     }
     
