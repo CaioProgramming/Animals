@@ -29,8 +29,4 @@ public abstract class Peixe extends Animal {
     public void brigar() {
         throw new UnsupportedOperationException("Brigando utilizando nadadeiras!");
     }
-    
-   
-
-   
 }
